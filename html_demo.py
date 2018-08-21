@@ -1,6 +1,6 @@
 from html.parser import HTMLParser
 
-metacount = 0;
+metacount = 0
 
 class MyHTMLParser(HTMLParser):
   # overriding default HTMLParser method
@@ -36,8 +36,7 @@ class MyHTMLParser(HTMLParser):
     print("\tAt line: ", pos[0], " position ", pos[1])
 
 
-def main():
-  # instantiate the parser and feed it some HTML
+def main():  
   parser = MyHTMLParser()
   f = open("samplehtml.html")
   if f.mode == 'r':
